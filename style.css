@@ -53,7 +53,7 @@ p {
     justify-content: space-between;
     padding: 20px 80px ;
     background-color: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06)
+    box-shadow: 0 5px 15px rgba(255, 254, 254, 0.889)
  }
 
  #navbar{
@@ -77,12 +77,12 @@ p {
     transition:0.3s ease;
  }
  #navbar li a:hover{
-    color:red;
+    color:rgb(224, 66, 151);
  }
 
  #navbar li a:hover,
  #navbar li a.active{
-    color:red; 
+    color:rgb(224, 66, 151); 
  }
 
  #navbar li a.active::after,
@@ -91,9 +91,42 @@ p {
     content: "";
     width: 30%;
     height: 2px;
-    color: red;
+    color: rgb(224, 66, 151);
     position: absolute;
     bottom: -4px;
     left: 20px;
 
  }
+#hero{
+    background-image: url(assets/hero.png);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position:top 25% right 0 ;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+#hero h4 a{
+    text-decoration: none;
+    color: rgb(224, 66, 151);
+}
+ 
+#hero button {
+    background-image: url(assets/Untitled\ design\ \(2\).png);
+    background-color: transparent;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    color: black;
+    text-decoration: ;
+    padding-right: ;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    background-repeat: no-repeat;
+
+}
