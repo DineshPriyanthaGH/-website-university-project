@@ -54,7 +54,7 @@ p {
     padding: 20px 80px ;
     background-color: white;
     box-shadow: 0 5px 15px rgba(249, 247, 247, 0.889)
-    z-index:999;
+    z-index: 999;
     position:sticky;
     top:0;
     left:0;
@@ -126,8 +126,6 @@ p {
     border: 0;
     padding: 14px 80px 14px 65px;
     color: black;
-    text-decoration: ;
-    padding-right: ;
     cursor: pointer;
     font-weight: 700;
     font-size: 15px;
