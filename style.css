@@ -219,6 +219,7 @@ img {
 }
 
 #feature {
+
    display:flex;
    align-items: center;
    justify-content: space-between;
@@ -227,15 +228,16 @@ img {
 
 #feature .fe-box{
     width:180px;
+    background-color: #FAD532;
     text-align:center;
     padding: 25px 15px;
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
-    border: 1px solid #cce7d0;
-    border-radius: 4px;
+    border: 1px solid #545353;
+    border-radius: 30px;
     margin: 15px 0;
 }
 #feature .fe-box:hover{
-    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.1);
+    box-shadow: 30px 30px 54px rgba(0, 0, 0, 0.1);
 }
 
 #feature .fe-box h6{
