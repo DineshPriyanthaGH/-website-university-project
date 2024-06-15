@@ -103,7 +103,7 @@ p {
  }
  .hero-section {
     position: relative;
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
     overflow: hidden;
     box-shadow: 10px 10px 54px rgba(217, 199, 32, 0.1);
@@ -141,7 +141,7 @@ img {
 }
 
 .shop-button {
-    background-color: #ff5733;
+    background-color: #272625;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
@@ -151,7 +151,7 @@ img {
 }
 
 .shop-button:hover {
-    background-color: #c70039;
+    background-color: rgb(226, 18, 18);
 }
 
 /* Media Queries for Responsive Design */
@@ -215,7 +215,7 @@ img {
 }
 
 .active, .dot:hover {
-    background-color: #717171;
+    background-color: #eee5e5;
 }
 
 #feature {
