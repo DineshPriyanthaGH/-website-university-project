@@ -6,7 +6,7 @@
     <title>Style Corner</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/> 
-
+      
 </head>
 
 
@@ -23,16 +23,39 @@
             <li><a href="contact.html">Contact</a></li>
             <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
 
-         </ul>
+         </ul>1
       </section>
-      <section id="hero">
-         <h4 style="color: white;">Trade-in-offer With <p style="color: rgb(232, 14, 90); font-size: 60px;padding-left: 60px;"> <a  href="index.html">STYLE CORNER</a></p> </h4>
-         <h2 style="color: rgb(126, 236, 177);">Super Value Deals </h2><br>
-         <h1 style="color: rgb(110, 202, 225);padding-left: 60px;">On All Products</h1>
-         <p style="color: white;"><b>Save more with coupons & up to 70% off! </b> </p><br><br>
-         <button style="padding-left: 10px;"><b>Shop Now</b></button>
-        </section>
-
+      <div class="hero-section">
+         <div class="slideshow-container">
+             <!-- Each image should be 1920x1080 pixels for optimal display -->
+             <div class="mySlides fade">
+                 <img src="assets/Slides/s1.png" alt="Slide 1" style="width:100%">
+                 <div class="button-container">
+                  <a href="#" class="shop-button">Shop Now</a>
+              </div>
+             </div>
+             <div class="mySlides fade">
+                 <img src="assets/Slides/s1.png" alt="Slide 2" style="width:100%">
+                 <div class="button-container">
+                  <a href="#" class="shop-button">Shop Now</a>
+              </div>
+             </div>
+             <div class="mySlides fade">
+                 <img src="assets/Slides/s1.png" alt="Slide 3" style="width:100%">
+                 <div class="button-container">
+                  <a href="#" class="shop-button">Shop Now</a>
+              </div>
+             </div>
+             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         </div>
+         <br>
+         <div style="text-align:center">
+             <span class="dot" onclick="currentSlide(1)"></span> 
+             <span class="dot" onclick="currentSlide(2)"></span> 
+             <span class="dot" onclick="currentSlide(3)"></span> 
+         </div>
+     </div>
 
        <section id="feature" class="section-p1">
         <div class="fe-box">
@@ -216,6 +239,12 @@
           
 
        </section>
+       <section id="banner" class="section-m1">
+         <h4>Repair Services</h4>
+         <h2>Up to <span>50% off</span> All Mens t shirts & Womens Accessories</h2>
+         <button>Explore More</button>
+       </section>
+
 
 
 
