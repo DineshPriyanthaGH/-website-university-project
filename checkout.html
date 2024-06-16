@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="header-container">
-            <h1>Checkout</h1>
+            <h1 style="color: #fad532;">Checkout</h1>
         </div>
     </header>
 
@@ -45,8 +45,7 @@
                     <label for="payment">Payment Method</label>
                     <select id="payment" name="payment" required>
                         <option value="credit">Credit Card</option>
-                        <option value="debit">Debit Card</option>
-                        <option value="paypal">PayPal</option>
+                        <option value="credit">Cash On Delivery</option>
                     </select>
                 </div>
                 <button type="submit" class="submit-btn">Place Order</button>
@@ -56,30 +55,36 @@
 
     <footer>
         <div class="footer-container">
-            <div class="footer-content">
-                <div class="contact-details">
-                    <h3>Contact Us</h3>
-                    <p>Address: 1234 Street Name, City, Country</p>
-                    <p>Email: support@yourshop.com</p>
-                    <p>Phone: +123 456 7890</p>
-                </div>
-                <div class="newsletter">
-                    <h3>Newsletter</h3>
-                    <form>
-                        <input type="email" placeholder="Your email">
-                        <button type="submit">Subscribe</button>
-                    </form>
-                </div>
-                <div class="social-media">
-                    <h3>Follow Us</h3>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p style="color: #fad532;">Subscribe to our newsletter to get the latest updates:</p>
+                <form id="newsletter-form">
+                    <input type="email" id="newsletter-email" name="email" placeholder="Your email address" required>
+                    <button type="submit" style="color: black;">Subscribe</button>
+                </form>
             </div>
-            <p>&copy; 2024 Your Shop. All Rights Reserved.</p>
+            <div class="footer-section">
+                <h3 id="contact">Contact Us</h3>
+                <p style="color: #fad532;"><strong>Address:</strong> No 44 ,Batticola Road , Polonnaruwa, SriLanka</p>
+                <p style="color: #fad532;" > <strong>Phone:</strong> +94 272050339</p>
+                <p style="color: #fad532;"><strong>Email:</strong> contact@stylecorner.com</p>
+                <br>
+              <p style="color: #fad532;">STYLE CORNER</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-media">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-twitter"></i></a>
+                 <a href="#"><i class="fab fa-instagram"></i></a>
+                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <p style="color: #fad532;">&copy; 2024 DotNet Solutions. All Rights Reserved.</p>
+          </div>
+            </div>
         </div>
     </footer>
+  
 </body>
 </html>

@@ -82,12 +82,12 @@ p {
     transition:0.3s ease;
  }
  #navbar li a:hover{
-    color:rgb(236, 21, 21);
+    color:#fad532;
  }
 
  #navbar li a:hover,
  #navbar li a.active{
-    color:rgb(226, 18, 18); 
+    color:#fad532; 
  }
 
  #navbar li a.active::after,
@@ -315,7 +315,7 @@ img {
     color: #5b7573;
 }
 
-/* Add the following styles to your existing CSS */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -383,7 +383,7 @@ body {
     background-color: rgb(226, 18, 18);
 }
 
-/* Add animation for the slideshow */
+
 .fade-2343 {
     -webkit-animation-name: fade-2343;
     -webkit-animation-duration: 1.5s;
@@ -547,7 +547,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.997);
     padding: 1em;
     border-radius: 5px;
 }
@@ -716,16 +716,17 @@ body {
 .shop-container {
     display: flex;
     padding: 2em;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 5000px;
+    margin: 0 ;
 }
 
 .filter-sidebar {
     width: 25%;
-    background-color: white;
+    background-color: #fad532;
     padding: 2em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-right: 2em;
+    border-radius: 20px;
 }
 
 .filter-sidebar h3 {
@@ -956,7 +957,7 @@ nav ul li a:hover {
     width: calc(33.33% - 20px);
     margin-bottom: 20px;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    box-shadow: 0 0 20px rgba(255, 213, 0, 0.301);
     transition: all 0.3s ease;
 }
 
