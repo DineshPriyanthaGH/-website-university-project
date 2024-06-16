@@ -27,7 +27,7 @@
     }
 
 
-    
+
     setInterval(() => {
         plusSlides(1);
     }, 5000); // Change image every 5 seconds
@@ -53,11 +53,10 @@ function showSlides() {
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1}    
     slides[slideIndex-1].style.display = "block";  
-    setTimeout(showSlides, 3000); // Change image every 3 seconds
-}
+    setTimeout(showSlides, 3000); 
 document.getElementById('newsletter-form').addEventListener('submit', function(event) {
     event.preventDefault();
     const email = document.getElementById('newsletter-email').value;
     alert(`Thank you for subscribing with ${email}!`);
-    // You can add your form submission logic here (e.g., sending the email to your server)
+   
 });
