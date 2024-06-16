@@ -26,11 +26,12 @@
         dots[slideIndex-1].className += " active";
     }
 
+
+    
     setInterval(() => {
         plusSlides(1);
     }, 5000); // Change image every 5 seconds
 
-    // Attach event listeners to dots for manual navigation
     let dots = document.getElementsByClassName("dot");
     for (let j = 0; j < dots.length; j++) {
         dots[j].addEventListener("click", function() {
