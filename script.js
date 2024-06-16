@@ -160,4 +160,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     renderCart();
+    
+    document.querySelector('.checkout-btn').addEventListener('click', () => {
+        window.location.href = 'checkout.html';
+    });
 });
