@@ -268,13 +268,13 @@ img {
 
 #product1 .pro{
     width: 23%;
-    min-width: 250px;
+    max-width: 230px;
     padding: 10px 12px;
-    border: 1px solid #cce7d0;
+    border: 1px solid #fcff9e;
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-    margin: 15px 0;
+    margin: 30px 30px;
     transition: 0.2s ease;
 
 }
@@ -314,16 +314,39 @@ img {
     color: #5b7573;
 }
 
-#banner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: url(assets/banners/Brown\ Blue\ Denim\ Jeans\ Fashion\ Sale\ Website\ Banner\ \(1\).png); 
-    color: white;
-    max-height: 2000px;
-    max-width: 2000px;
+#banner-slideshow .carousel-inner {
+    border-radius: 15px;
+    box-shadow: 10px 10px 54px rgba(217, 199, 32, 0.1);
 }
 
+#banner-slideshow .carousel-caption {
+    background: rgba(229, 226, 226, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+}
 
+#banner-slideshow .carousel-caption h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#banner-slideshow .carousel-caption p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+#banner-slideshow .shop-button {
+    background-color: #272625;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+#banner-slideshow .shop-button:hover {
+    background-color: rgb(226, 18, 18);
+}
