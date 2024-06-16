@@ -61,3 +61,32 @@ document.getElementById('newsletter-form').addEventListener('submit', function(e
    
 });
 }
+document.querySelectorAll('.remove-item').forEach(button => {
+    button.addEventListener('click', function() {
+        this.closest('.cart-item').remove();
+        updateSummary();
+    });
+});
+
+document.querySelectorAll('#quantity').forEach(input => {
+    input.addEventListener('change', function() {
+        if (this.value < 1) this.value = 1;
+        updateSummary();
+    });
+});
+
+function updateSummary() {
+    let subtotal = 0;
+    document.querySelectorAll('.cart-item').forEach(item => {
+        const price = parseFloat(item.querySelector('.item-details p:nth-child(3)').textContent.replace('Price: $', ''));
+        const quantity = parseInt(item.querySelector('#quantity').value);
+        subtotal += price * quantity;
+    });
+
+    const tax = subtotal * 0.1;
+    const total = subtotal + tax;
+
+    document.querySelector('.cart-summary p:nth-child(2)').textContent = `Subtotal: $${subtotal.toFixed(2)}`;
+    document.querySelector('.cart-summary p:nth-child(3)').textContent = `Tax: $${tax.toFixed(2)}`;
+    document.querySelector('.cart-summary p:nth-child(4)').textContent = `Total: $${total.toFixed(2)}`;
+}
