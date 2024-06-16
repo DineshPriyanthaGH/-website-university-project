@@ -165,3 +165,61 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = 'checkout.html';
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const filterForm = document.getElementById('filter-form');
+    const priceRange = document.getElementById('price-range');
+    const priceRangeValue = document.getElementById('price-range-value');
+    const products = document.querySelectorAll('.pro');
+
+    // Update price range value
+    priceRange.addEventListener('input', () => {
+        priceRangeValue.textContent = `0 - ${priceRange.value}`;
+    });
+
+    // Filter products
+    filterForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const category = document.getElementById('category').value;
+        const price = parseInt(priceRange.value);
+        const rating = parseInt(document.getElementById('rating').value);
+
+        products.forEach(product => {
+            const productCategory = product.getAttribute('data-category');
+            const productPrice = parseInt(product.getAttribute('data-price'));
+            const productRating = parseInt(product.getAttribute('data-rating'));
+
+            let isVisible = true;
+
+            if (category && category !== productCategory) {
+                isVisible = false;
+            }
+            if (price && productPrice > price) {
+                isVisible = false;
+            }
+            if (rating && productRating < rating) {
+                isVisible = false;
+            }
+
+            if (isVisible) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+    });
+
+    // Add to cart functionality
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const productId = button.getAttribute('data-id');
+            // Assuming you have a function to handle adding items to the cart
+            addToCart(productId);
+        });
+    });
+
+    function addToCart(productId) {
+        // Implement add to cart functionality here
+        console.log(`Product ${productId} added to cart`);
+    }
+});
