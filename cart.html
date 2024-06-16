@@ -1,3 +1,4 @@
+<!-- Cart Page (cart.html) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,47 +7,33 @@
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="style.css">
 </head>
-</head>
 <body>
-    <!-- Header Section -->
     <header>
         <div class="header-container">
             <h1>Your Cart</h1>
         </div>
     </header>
-</body>
-   <!-- Cart Section -->
-   <section id="cart">
-    <div class="cart-container">
-        <h2>Shopping Cart</h2>
-        <div class="cart-items">
-            <!-- Example item -->
-            <div class="cart-item">
-                <img src="item1.jpg" alt="Item 1" class="item-image">
-                <div class="item-details">
-                    <h3>Item Name</h3>
-                    <p>Size: M</p>
-                    <p>Price: $50.00</p>
-                    <label for="quantity">Quantity:</label>
-                    <input type="number" id="quantity" name="quantity" value="1" min="1">
-                </div>
-                <button class="remove-item">Remove</button>
+
+    <section id="cart">
+        <div class="cart-container">
+            <h2>Shopping Cart</h2>
+            <div class="cart-items"></div>
+            <div class="cart-summary">
+                <h3>Summary</h3>
+                <p>Subtotal: $<span class="subtotal">0.00</span></p>
+                <p>Tax: $<span class="tax">0.00</span></p>
+                <p><strong>Total: $<span class="total">0.00</span></strong></p>
+                <button class="checkout-btn">Proceed to Checkout</button>
             </div>
-            <!-- More items can be added in similar structure -->
         </div>
-        <div class="cart-summary">
-            <h3>Summary</h3>
-            <p>Subtotal: $50.00</p>
-            <p>Tax: $5.00</p>
-            <p><strong>Total: $55.00</strong></p>
-            <button class="checkout-btn">Proceed to Checkout</button>
+    </section>
+
+    <footer id="f1">
+        <div class="footer-container">
+            <p>&copy; 2024 Your Shop. All Rights Reserved.</p>
         </div>
-    </div>
-</section>
-<footer>
-    <div class="footer-container">
-        <p>&copy; 2024 Your Shop. All Rights Reserved.</p>
-    </div>
-</footer>
-<script src="script.js"></script>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
