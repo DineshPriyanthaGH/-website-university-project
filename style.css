@@ -672,3 +672,183 @@ form .form-group input, form .form-group select {
     cursor: pointer;
     border-radius: 5px;
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.header-container {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner-container {
+    position: relative;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.shop-container {
+    display: flex;
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.filter-sidebar {
+    width: 25%;
+    background-color: white;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 2em;
+}
+
+.filter-sidebar h3 {
+    margin-bottom: 1em;
+}
+
+.filter-group {
+    margin-bottom: 1em;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.filter-group input,
+.filter-group select {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filter-btn {
+    background-color: #333;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.product-list {
+    flex: 1;
+}
+
+.pro-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pro {
+    background-color: white;
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 2em);
+    box-sizing: border-box;
+}
+
+.pro img {
+    width: 100%;
+    height: auto;
+}
+
+.des {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.star {
+    margin-top: 0.5em;
+}
+
+.star i {
+    margin: 0 0.1em;
+}
+
+.add-to-cart {
+    background-color: #333;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.footer-content div {
+    flex: 1;
+    margin: 0 1em;
+}
+
+.newsletter form {
+    display: flex;
+}
+
+.newsletter input {
+    flex: 1;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #ff6f61;
+    color: white;
+    cursor: pointer;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 0.5em;
+    text-decoration: none;
+}
