@@ -403,16 +403,18 @@ body {
 
 /* Footer Styles */
 footer {
-    background-color: #333;
+    background-color: #090909;
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    text-decoration: none;
 }
 
 .footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    box-shadow: #e90f0f;
 }
 
 .footer-section {
@@ -447,14 +449,14 @@ footer {
 #newsletter-form button {
     padding: 10px 20px;
     border: none;
-    background-color: #ff6600;
-    color: #fff;
+    background-color: #fad532;
+    color: #ffffff;
     border-radius: 5px;
     cursor: pointer;
 }
 
 #newsletter-form button:hover {
-    background-color: #e65c00;
+    background-color: #e90f0f;
 }
 
 .store-icon {
