@@ -314,30 +314,61 @@ img {
     color: #5b7573;
 }
 
-#banner-slideshow .carousel-inner {
-    border-radius: 15px;
-    box-shadow: 10px 10px 54px rgba(217, 199, 32, 0.1);
+/* Add the following styles to your existing CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#banner-slideshow .carousel-caption {
-    background: rgba(229, 226, 226, 0.5);
+#shop-banners-2343 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.slideshow-container-2343 {
+    position: relative;
+    width: 80%;
+    max-width: ;
+    margin: auto;
+}
+
+.mySlides-2343 {
+    display: none;
+    position: relative;
+}
+
+.mySlides-2343 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.banner-content-2343 {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: rgb(228, 217, 217);
+    background: rgba(235, 232, 232, 0.5);
     padding: 20px;
     border-radius: 15px;
 }
 
-#banner-slideshow .carousel-caption h2 {
+.banner-content-2343 h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: white;
 }
 
-#banner-slideshow .carousel-caption p {
+.banner-content-2343 p {
     font-size: 16px;
     margin-bottom: 15px;
-    color: white;
 }
 
-#banner-slideshow .shop-button {
+.shop-button-2343 {
     background-color: #272625;
     color: white;
     padding: 10px 20px;
@@ -347,6 +378,24 @@ img {
     transition: background-color 0.3s ease;
 }
 
-#banner-slideshow .shop-button:hover {
+.shop-button-2343:hover {
     background-color: rgb(226, 18, 18);
+}
+
+/* Add animation for the slideshow */
+.fade-2343 {
+    -webkit-animation-name: fade-2343;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade-2343;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade-2343 {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade-2343 {
+    from {opacity: .4} 
+    to {opacity: 1}
 }
