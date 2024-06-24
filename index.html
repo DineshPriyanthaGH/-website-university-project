@@ -6,7 +6,201 @@
     <title>Style Corner</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/> 
-   
+    <style>
+      /* Paste the responsive CSS code here */
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+      }
+
+      /* Navigation */
+      #navbar {
+          display: flex;
+          justify-content: space-around;
+          list-style: none;
+          background-color: #333
+          padding: 10px;
+          margin: 0;
+      }
+
+      #navbar li {
+          display: inline;
+      }
+
+      #navbar a {
+          color: white;
+          text-decoration: none;
+          padding: 10px 20px;
+      }
+
+      #navbar a:hover {
+          background-color: #ddd;
+          color: black;
+      }
+
+      .menu-icon {
+          display: none;
+          font-size: 30px;
+          color: rgb(5, 5, 5);
+          cursor: pointer;
+      }
+
+      /* Hero Section */
+      .hero-section {
+          position: relative;
+          text-align: center;
+      }
+
+      .hero-section img {
+          width: 100%;
+      }
+
+      .button-container {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      }
+
+      .shop-button {
+          background-color: #000;
+          color: #fff;
+          padding: 10px 20px;
+          text-decoration: none;
+      }
+
+      /* Feature Section */
+      #feature {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+      }
+
+      .fe-box {
+          flex: 1 1 30%;
+          max-width: 30%;
+          text-align: center;
+          margin: 10px;
+      }
+
+      /* Product Section */
+      .pro-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+      }
+
+      .pro {
+          flex: 1 1 30%;
+          max-width: 30%;
+          margin: 10px;
+          text-align: center;
+      }
+
+      .pro img {
+          width: 100%;
+      }
+
+      .pro .des {
+          padding: 10px;
+      }
+
+      /* Shop Banners */
+      #shop-banners-2343 {
+          position: relative;
+      }
+
+      #shop-banners-2343 img {
+          width: 100%;
+      }
+
+      .banner-content-2343 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+          text-align: center;
+      }
+
+      .shop-button-2343 {
+          background-color: #000;
+          color: #fff;
+          padding: 10px 20px;
+          text-decoration: none;
+      }
+
+      /* About Section */
+      .about-container {
+          padding: 20px;
+      }
+
+      .about-content {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+      }
+
+      .about-text,
+      .about-image {
+          flex: 1 1 45%;
+          max-width: 45%;
+          margin: 10px;
+      }
+
+      .about-image img {
+          width: 100%;
+      }
+
+      /* Footer */
+      .footer-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          background-color: #333;
+          color: white;
+          padding: 20px;
+      }
+
+      .footer-section {
+          flex: 1 1 30%;
+          max-width: 30%;
+          margin: 10px;
+      }
+
+      .footer-section h3 {
+          color: #fad532;
+      }
+
+      /* Media Queries */
+      @media (max-width: 768px) {
+          #navbar {
+              display: none;
+              flex-direction: column;
+              align-items: center;
+              width: 100%;
+              background-color: #333;
+          }
+
+          .menu-icon {
+              display: block;
+          }
+
+          .fe-box,
+          .pro,
+          .about-text,
+          .about-image,
+          .footer-section {
+              flex: 1 1 100%;
+              max-width: 100%;
+          }
+
+          .menu-icon.active + #navbar {
+              display: flex;
+          }
+      }
+  </style>
 </head>
 
 
@@ -22,7 +216,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
-
+            <div class="menu-icon" onclick="toggleMenu()"> <i class="fas fa-bars"></i> </div> 
          </ul>
       </section>
       <div class="hero-section">
@@ -388,7 +582,23 @@
   </footer>
 
 
-       
+  <script>
+   document.addEventListener('DOMContentLoaded', (event) => {
+       console.log("DOM fully loaded and parsed");
+       const menuIcon = document.querySelector('.menu-icon');
+       const navbar = document.getElementById('navbar');
+
+       if (menuIcon && navbar) {
+           menuIcon.addEventListener('click', function() {
+               console.log("Menu icon clicked");
+               this.classList.toggle('active');
+               navbar.classList.toggle('active');
+           });
+       } else {
+           console.error("Menu icon or navbar not found");
+       }
+   });
+</script> 
 
 
 
@@ -397,9 +607,8 @@
 
 
 
-
-
-
+  
+   
 
 <script src="script.js"></script>
 </body>
